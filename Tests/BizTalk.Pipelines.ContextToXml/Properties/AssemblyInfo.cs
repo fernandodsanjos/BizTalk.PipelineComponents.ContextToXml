@@ -1,18 +1,21 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using Microsoft.XLANGs.BaseTypes;
+using Microsoft.BizTalk.XLANGs.BTXEngine;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BizTalkComponents.PipelineComponents.ContextToXml")]
+[assembly: AssemblyTitle("BizTalk.Pipelines.ContextToXml")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BizTalkComponents.PipelineComponents.ContextToXml")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyProduct("BizTalk.Pipelines.ContextToXml")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+[assembly: Microsoft.XLANGs.BaseTypes.BizTalkAssemblyAttribute(typeof(BTXService))]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -20,7 +23,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("282ecebe-ec14-459e-9d3c-87c8502add66")]
+[assembly: Guid("cee3aafd-e4b5-4004-9d56-bc4134d2cca2")]
 
 // Version information for an assembly consists of the following four values:
 //
