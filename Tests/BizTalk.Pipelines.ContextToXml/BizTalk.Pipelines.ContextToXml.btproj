@@ -78,6 +78,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />
+    <Schema Include="Schemas\simple.xsd">
+      <TypeName>simple</TypeName>
+      <Namespace>BizTalk.Pipelines.ContextToXml.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
   </ItemGroup>
   <ItemGroup>
     <Pipeline Include="Pipelines\BizTalk.SendPipeline.btp">
@@ -85,6 +90,14 @@
       <Namespace>BizTalk.Pipelines.ContextToXml.Pipelines</Namespace>
       <SubType>Task</SubType>
     </Pipeline>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Map Include="Maps\Context_To_siplme.btm">
+      <TypeName>Context_To_siplme</TypeName>
+      <Namespace>BizTalk.Pipelines.ContextToXml.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

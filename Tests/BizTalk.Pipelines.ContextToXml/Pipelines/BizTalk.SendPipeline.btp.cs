@@ -27,7 +27,7 @@ namespace BizTalk.Pipelines.ContextToXml.Pipelines
 "Occurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e4108-4cce-4536-83fa-4a5040674ad6\" />      <C"+
 "omponents />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "58299faf-b9f3-4b77-a333-bb18fb9dda13";
+        private const string _versionDependentGuid = "a7c8d85d-8219-4213-af75-a17edd8e181a";
         
         public BizTalk_SendPipeline()
         {

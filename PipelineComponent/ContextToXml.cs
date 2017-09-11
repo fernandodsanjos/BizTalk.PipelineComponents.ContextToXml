@@ -17,6 +17,7 @@ using Microsoft.BizTalk.ScalableTransformation;
 using Microsoft.XLANGs.RuntimeTypes;
 using BizTalkComponents.Utils;
 using System.Globalization;
+using Microsoft.BizTalk.Streaming;
 
 namespace BizTalkComponents.PipelineComponents
 {
@@ -48,8 +49,10 @@ namespace BizTalkComponents.PipelineComponents
             string name = String.Empty;
             string ns = String.Empty;
 
+            string ass = Assembly.GetExecutingAssembly().FullName;
+
             wtr.WriteStartDocument();
-            wtr.WriteStartElement("ContextCollection", "http://BizTalk.PipelineComponents.Context");
+            wtr.WriteStartElement("ct","ContextCollection", "http://BizTalk.PipelineComponents.ContextToXml.Context");
 
             for (int i = 0; i < propCount; i++)
             {
@@ -74,6 +77,14 @@ namespace BizTalkComponents.PipelineComponents
             wtr.Flush();
             mem.Position = 0;
 
+            //do not know why i have to do this but i get some nasty errors if i don't
+            StreamReader reader = new StreamReader(pInMsg.BodyPart.Data);
+            reader.ReadToEnd();
+
+            //SchemaStrongName
+            pInMsg.Context.Promote("MessageType", "http://schemas.microsoft.com/BizTalk/2003/system-properties", "http://BizTalk.PipelineComponents.ContextToXml.Context#ContextCollection");
+
+            pContext.ResourceTracker.AddResource(mem);
             pInMsg.BodyPart.Data = mem;
 
             return pInMsg;
