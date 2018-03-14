@@ -91,7 +91,12 @@
       <SubType>Task</SubType>
     </Pipeline>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\PipelineComponent\Schemas\BizTalk.PipelineComponents.ContextToXml.Schemas.btproj">
+      <Project>{d70ef8b1-cc2a-4a7f-acd1-a0a9f2f17479}</Project>
+      <Name>BizTalk.PipelineComponents.ContextToXml.Schemas</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Map Include="Maps\Context_To_siplme.btm">
       <TypeName>Context_To_siplme</TypeName>

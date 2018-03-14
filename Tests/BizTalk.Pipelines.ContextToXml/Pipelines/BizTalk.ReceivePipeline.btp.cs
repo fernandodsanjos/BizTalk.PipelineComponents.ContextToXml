@@ -45,7 +45,7 @@ namespace BizTalk.Pipelines.ContextToXml.Pipelines
 "lveParty\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e410e-4cce-4536-83fa-4a5040674ad"+
 "6\" />      <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "95cf4298-2f28-4d2b-9808-6d6bc772dcef";
+        private const string _versionDependentGuid = "81378d7f-ba59-4b9c-8c2b-620a371f14fe";
         
         public BizTalk_ReceivePipeline()
         {

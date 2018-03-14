@@ -81,8 +81,12 @@ namespace BizTalkComponents.PipelineComponents
             StreamReader reader = new StreamReader(pInMsg.BodyPart.Data);
             reader.ReadToEnd();
 
+            BTS.SchemaStrongName SchemaStrongName = new BTS.SchemaStrongName();
+            BTS.MessageType MessageType = new BTS.MessageType();
+
             //SchemaStrongName
-            pInMsg.Context.Promote("MessageType", "http://schemas.microsoft.com/BizTalk/2003/system-properties", "http://BizTalk.PipelineComponents.ContextToXml.Context#ContextCollection");
+            pInMsg.Context.Write(MessageType.Name.Name, MessageType.Name.Namespace, "http://BizTalk.PipelineComponents.ContextToXml.Context#ContextCollection");
+            pInMsg.Context.Write(SchemaStrongName.Name.Name, SchemaStrongName.Name.Namespace, (object)null);
 
             pContext.ResourceTracker.AddResource(mem);
             pInMsg.BodyPart.Data = mem;

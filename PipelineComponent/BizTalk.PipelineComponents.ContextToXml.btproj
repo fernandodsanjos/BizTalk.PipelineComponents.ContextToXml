@@ -81,11 +81,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Schema Include="Schemas\Context.xsd">
-      <TypeName>Context</TypeName>
-      <Namespace>BizTalk.PipelineComponents.ContextToXml</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <None Include="Key.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

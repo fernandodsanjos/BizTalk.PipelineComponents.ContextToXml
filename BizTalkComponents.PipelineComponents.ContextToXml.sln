@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalk.Pipelines.ContextTo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F7AB1E82-47A8-4572-881E-EC1E3074208F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalk.PipelineComponents.ContextToXml.Schemas", "PipelineComponent\Schemas\BizTalk.PipelineComponents.ContextToXml.Schemas.btproj", "{D70EF8B1-CC2A-4A7F-ACD1-A0A9F2F17479}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{614ECD3E-4FAC-4044-8F2A-9D65557B9EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{614ECD3E-4FAC-4044-8F2A-9D65557B9EC4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{614ECD3E-4FAC-4044-8F2A-9D65557B9EC4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D70EF8B1-CC2A-4A7F-ACD1-A0A9F2F17479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70EF8B1-CC2A-4A7F-ACD1-A0A9F2F17479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70EF8B1-CC2A-4A7F-ACD1-A0A9F2F17479}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D70EF8B1-CC2A-4A7F-ACD1-A0A9F2F17479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70EF8B1-CC2A-4A7F-ACD1-A0A9F2F17479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70EF8B1-CC2A-4A7F-ACD1-A0A9F2F17479}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
